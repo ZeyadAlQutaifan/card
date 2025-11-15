@@ -1,0 +1,870 @@
+2025-11-15T13:56:02.452+03:00  INFO 93687 --- [card-service] [main] [                                                 ] com.observability.card.CardApplication   : Starting CardApplication using Java 23.0.1 with PID 93687 (/Users/2117.zyad/Downloads/card/target/classes started by 2117.zyad in /Users/2117.zyad/Downloads/card)
+2025-11-15T13:56:02.454+03:00  INFO 93687 --- [card-service] [main] [                                                 ] com.observability.card.CardApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-15T13:56:02.893+03:00  INFO 93687 --- [card-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2025-11-15T13:56:02.899+03:00  INFO 93687 --- [card-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-15T13:56:02.899+03:00  INFO 93687 --- [card-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.13]
+2025-11-15T13:56:02.917+03:00  INFO 93687 --- [card-service] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 440 ms
+2025-11-15T13:56:02.994+03:00  INFO 93687 --- [card-service] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=card-service, deployment.environment=development}
+2025-11-15T13:56:03.249+03:00  INFO 93687 --- [card-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2025-11-15T13:56:03.283+03:00  INFO 93687 --- [card-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2025-11-15T13:56:03.287+03:00  INFO 93687 --- [card-service] [main] [                                                 ] com.observability.card.CardApplication   : Started CardApplication in 1.044 seconds (process running for 1.548)
+2025-11-15T13:56:03.493+03:00  INFO 93687 --- [card-service] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-15T13:56:03.494+03:00  INFO 93687 --- [card-service] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-15T13:56:03.494+03:00  INFO 93687 --- [card-service] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-15T13:56:08.122+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.122+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.122+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.122+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:08.123+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:08.148+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-1] [ea2f72d7ef84d8ff37720b072a8bd468-bc18154b5c0197c8] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T13:56:08.151+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-3] [71547ebf27385538aa345976cc332ea6-3b910f8fe0959b46] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T13:56:08.152+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-4] [69516a0662d3f7f550dec9e64df256f1-8c081ec109dc5fc0] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T13:56:08.160+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T13:56:08.170+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-2] [2cf7f9c300666aee64dfdbb09abbb0be-ae9133d3378fcf68] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T13:56:08.855+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-2] [2cf7f9c300666aee64dfdbb09abbb0be-ae9133d3378fcf68] c.o.card.controller.CardController       : Card created with ID: CARD-1763204168855
+2025-11-15T13:56:09.931+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:09.932+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:09.932+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:22.588+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.588+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.588+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:22.589+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-6] [66f7d983fffcc313ce821a38646db314-2d9de0b8cbdf0b44] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T13:56:22.598+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.598+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.599+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:22.599+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-7] [5392f0d3cedf871c676986e8ed99034d-be35a78d4065ee75] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T13:56:22.600+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T13:56:22.621+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.621+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.621+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:22.622+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-8] [6d12cd0f249afec4393dacbaadd43910-8c4ec58a79660a79] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T13:56:22.628+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.628+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:22.628+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:22.629+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-9] [8c135182ccb8e05b782cdd15d6bd0b96-dee5b5298ab5ea1d] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T13:56:23.337+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-9] [8c135182ccb8e05b782cdd15d6bd0b96-dee5b5298ab5ea1d] c.o.card.controller.CardController       : Card created with ID: CARD-1763204183337
+2025-11-15T13:56:24.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:24.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:24.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:43.605+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.605+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.605+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:43.605+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-4] [ee668a7fef3c01a28390517c1b60c1f9-96de2b10d8b8a813] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T13:56:43.606+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T13:56:43.612+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.612+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.612+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:43.613+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-3] [8a77a894ef5e7bef337d4cc92c957670-782b7606c009b0ce] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T13:56:43.621+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.621+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.621+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:43.622+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-2] [3186ee1dc42080b20834bed37edd7ca9-807f485b5d913787] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T13:56:43.628+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.628+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:43.628+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:56:43.629+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-5] [af4531e7a05f7e2e6161c10e30965568-ed3f01ad9ee55199] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T13:56:44.304+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-3] [8a77a894ef5e7bef337d4cc92c957670-782b7606c009b0ce] c.o.card.controller.CardController       : Card created with ID: CARD-1763204204304
+2025-11-15T13:56:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:54.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:56:54.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:09.932+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:09.933+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:09.934+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:26.747+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.747+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.747+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:26.748+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-3] [51f5d24c9a9bc6e32505b548bce5d6f4-a9ceb7aeb1622cbb] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T13:57:26.755+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.755+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.755+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:26.756+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-7] [9f0b72b08f1b7249276fae5b2e4a826b-7e67a580bc30f5ea] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T13:57:26.757+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T13:57:26.766+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.766+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.766+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:26.767+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-6] [5c8eaef2fe5913f941bd07553c733676-5a099ed033acc12c] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T13:57:26.776+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.776+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:26.776+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:26.777+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-8] [8ed52070745bc3de752e965f3dfdc66e-f020ecf98af3c75a] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T13:57:27.092+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-8] [8ed52070745bc3de752e965f3dfdc66e-f020ecf98af3c75a] c.o.card.controller.CardController       : Card created with ID: CARD-1763204247092
+2025-11-15T13:57:28.016+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:28.016+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:28.016+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:28.017+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-9] [63d19fb4fc7d5b31d50c905c263c2b56-2fd86678c4e36834] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T13:57:28.296+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-9] [63d19fb4fc7d5b31d50c905c263c2b56-2fd86678c4e36834] c.o.card.controller.CardController       : Card created with ID: CARD-1763204248296
+2025-11-15T13:57:29.557+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:29.557+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:29.557+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:29.558+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-10] [554387f91a99c61af4764028035f12fb-b8fabaff11f989a5] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T13:57:30.078+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-10] [554387f91a99c61af4764028035f12fb-b8fabaff11f989a5] c.o.card.controller.CardController       : Card created with ID: CARD-1763204250077
+2025-11-15T13:57:39.926+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:57:54.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:57:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:58:09.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:09.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:09.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:58:24.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:24.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:24.926+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:58:39.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:39.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:39.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:58:54.921+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:54.921+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:58:54.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:59:09.921+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:09.921+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:09.921+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:59:24.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:24.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:24.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:59:39.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:39.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:39.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T13:59:54.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:54.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T13:59:54.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:00:09.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:09.926+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:09.926+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:00:24.921+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:24.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:24.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:00:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:39.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:39.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:00:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:00:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:09.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:09.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:09.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:24.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:24.922+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:24.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-4] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:39.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:39.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:39.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-7] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:46.973+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.973+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.973+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:46.974+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-6] [eaa21b18afb53907012eba2478405d01-a0116b5e0879b76f] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T14:01:46.980+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.980+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.980+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:46.981+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-8] [28b3c754d5b017697fc817246c71941c-d9eddd963eb49e4f] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:01:46.989+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.989+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.989+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:46.990+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-3] [63dceab540c85b30963e0d9fa0bc3f00-5196eef3d3a634d8] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T14:01:46.998+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.998+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:46.998+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:01:46.999+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-9] [2e0809542c79d7daf79635f1370e590c-7cad72c6462e2fb1] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T14:01:46.999+03:00 ERROR 93687 --- [card-service] [http-nio-8082-exec-9] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T14:01:47.416+03:00  INFO 93687 --- [card-service] [http-nio-8082-exec-6] [eaa21b18afb53907012eba2478405d01-a0116b5e0879b76f] c.o.card.controller.CardController       : Card created with ID: CARD-1763204507416
+2025-11-15T14:01:54.923+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:54.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:01:54.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:02:09.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:09.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:09.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:02:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:24.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-2] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:02:39.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:39.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:39.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-5] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:02:54.929+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:54.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:02:54.930+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-3] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:03:09.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:09.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:09.928+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-8] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:03:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:24.927+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-6] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:03:39.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:39.926+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:39.926+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-10] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:03:54.924+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:54.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:03:54.925+03:00 DEBUG 93687 --- [card-service] [http-nio-8082-exec-1] [                                                 ] i.m.t.o.p.BaggageTextMapPropagator       : Will propagate new baggage context for entries {}
+2025-11-15T14:03:57.932+03:00  INFO 93687 --- [card-service] [SpringApplicationShutdownHook] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-15T14:03:57.937+03:00  INFO 93687 --- [card-service] [tomcat-shutdown] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-15T14:04:00.492+03:00  INFO 95053 --- [card-service] [main] [                                                 ] com.observability.card.CardApplication   : Starting CardApplication using Java 23.0.1 with PID 95053 (/Users/2117.zyad/Downloads/card/target/classes started by 2117.zyad in /Users/2117.zyad/Downloads/card)
+2025-11-15T14:04:00.493+03:00  INFO 95053 --- [card-service] [main] [                                                 ] com.observability.card.CardApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-15T14:04:00.939+03:00  INFO 95053 --- [card-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2025-11-15T14:04:00.945+03:00  INFO 95053 --- [card-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-15T14:04:00.945+03:00  INFO 95053 --- [card-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.13]
+2025-11-15T14:04:00.965+03:00  INFO 95053 --- [card-service] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 448 ms
+2025-11-15T14:04:01.045+03:00  INFO 95053 --- [card-service] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=card-service}
+2025-11-15T14:04:01.289+03:00  INFO 95053 --- [card-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2025-11-15T14:04:01.324+03:00  INFO 95053 --- [card-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2025-11-15T14:04:01.328+03:00  INFO 95053 --- [card-service] [main] [                                                 ] com.observability.card.CardApplication   : Started CardApplication in 1.038 seconds (process running for 1.537)
+2025-11-15T14:04:01.596+03:00  INFO 95053 --- [card-service] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-15T14:04:01.596+03:00  INFO 95053 --- [card-service] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-15T14:04:01.597+03:00  INFO 95053 --- [card-service] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-15T14:04:09.967+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:09.967+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:24.922+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:24.922+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:39.925+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:39.926+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:54.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:54.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.117+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.117+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.120+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-5] [3053d1bcfea4d17d01b84e74e6bcd62c-9b7fd7e602842e9a] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:04:56.124+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.124+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.125+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-6] [bc4262bf0d2d9a6abed94c4006aa2667-352e122e05ef8501] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T14:04:56.131+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.131+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.132+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-7] [3846ad86a016747af7e4a0fdbcd4b9c3-18052a8baabe5101] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T14:04:56.136+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T14:04:56.140+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.140+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:04:56.154+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-8] [8fc93d2c8c85be069a7a08d237c909c2-f3fdf5def966b083] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T14:04:56.709+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-8] [8fc93d2c8c85be069a7a08d237c909c2-f3fdf5def966b083] c.o.card.controller.CardController       : Card created with ID: CARD-1763204696708
+2025-11-15T14:05:07.763+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.764+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.765+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-9] [cd7f69d6916ca3ffeb192b5cbb68a487-bf03f4d60ec6e9bb] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T14:05:07.773+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.773+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.774+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-10] [387e9765f706748e21e72d62b220a8ad-8523e72a418b2604] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:05:07.790+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.790+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.791+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-1] [4775a10fc437f945a12b7dff59fad757-450b9f1b8cc87a0e] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T14:05:07.797+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.797+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:07.798+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-2] [cbc119e91ae40869c55bc00f894ac6aa-24e44b931466f7b9] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T14:05:07.799+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T14:05:08.166+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-9] [cd7f69d6916ca3ffeb192b5cbb68a487-bf03f4d60ec6e9bb] c.o.card.controller.CardController       : Card created with ID: CARD-1763204708166
+2025-11-15T14:05:09.926+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:09.928+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:24.927+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:24.928+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:39.926+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:39.927+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:47.285+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:47.285+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:47.286+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-5] [e0233c7d9ba84d95e66682c129b1a82b-1548ea1f30b24ff5] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:05:54.929+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:05:54.930+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.416+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.416+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.417+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-9] [44e9c09fc3a8f3c88b17f93240c9af1f-29f0c01678abb268] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T14:06:08.424+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.424+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.425+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-3] [53e112a54de1e6e8b603e38137dda603-7a3c3c7afd6cb096] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:06:08.434+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.434+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.434+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-4] [b68285c37c5863b22c55303593b69e6f-af3ac999b49521fa] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T14:06:08.435+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T14:06:08.441+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.442+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:08.442+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-7] [8a1f1cd4e63150c8223442e6d9949fb4-ea0368421d66ae39] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T14:06:08.681+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-7] [8a1f1cd4e63150c8223442e6d9949fb4-ea0368421d66ae39] c.o.card.controller.CardController       : Card created with ID: CARD-1763204768681
+2025-11-15T14:06:09.920+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:09.920+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:22.079+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:22.079+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:22.080+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-2] [94047e07ee3d5410a0bbe0ef7e490680-d73ab4990cd53253] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:06:24.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:24.924+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:39.925+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:39.926+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:50.261+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:50.261+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:50.262+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-9] [83d3c98c0147b49d33d4a0e889a3cc0d-2b498da10b58d561] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T14:06:50.911+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-9] [83d3c98c0147b49d33d4a0e889a3cc0d-2b498da10b58d561] c.o.card.controller.CardController       : Card created with ID: CARD-1763204810911
+2025-11-15T14:06:54.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:06:54.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:09.924+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:09.925+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:24.922+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:24.922+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:39.924+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:39.925+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:54.920+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:07:54.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:09.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:09.922+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:24.925+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:24.927+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:39.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:39.922+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:54.920+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:08:54.920+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:09.918+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:09.918+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:24.918+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:24.918+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:39.918+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:39.918+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:54.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:09:54.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:10:09.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:10:09.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:10:24.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:10:24.923+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:10:39.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:10:39.921+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:07.949+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:07.949+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:07.950+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-5] [9beb4e7fcb1141a65c62026761107dbe-119f7818476f4910] c.o.card.controller.CardController       : Fetching card with ID: 123
+2025-11-15T14:11:09.628+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:09.628+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:09.628+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-8] [c47c2f51925099686e7b289aae3f7d45-c72b1736c63f44f9] c.o.card.controller.CardController       : Fetching card with ID: 456
+2025-11-15T14:11:16.105+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:16.106+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:31.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:31.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:46.107+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:11:46.112+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:01.107+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:01.107+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:16.106+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:16.106+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:31.107+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:31.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.811+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.811+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.812+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-5] [340892ba3745d5ad428f02a57701af05-d90d825e52d6dc08] c.o.card.controller.CardController       : Fetching card with ID: 234
+2025-11-15T14:12:42.817+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.817+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.818+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-6] [68ac1d18c1ad1521cee48e031426d63e-c3889721fd2e233e] c.o.card.controller.CardController       : Simulating an error scenario
+2025-11-15T14:12:42.818+03:00 ERROR 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Intentional error for testing observability] with root cause
+
+java.lang.RuntimeException: Intentional error for testing observability
+	at com.observability.card.controller.CardController.simulateError(CardController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.0-RC3.jar:7.0.0-RC3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.13.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.0-RC3.jar:7.0.0-RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.13.jar:11.0.13]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-11-15T14:12:42.826+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.826+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.827+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-8] [cb91fb4f840bcc27b3492f81536bde91-33f93d3cbca34cdc] c.o.card.controller.CardController       : Creating new card for holder: sdfdsf
+2025-11-15T14:12:42.832+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.836+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:42.836+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-2] [4438b63ec18d12d15a0fd5f5f7516152-2bfe4548864b85c2] c.o.card.controller.CardController       : Fetching card with ID: 567
+2025-11-15T14:12:43.554+03:00  INFO 95053 --- [card-service] [http-nio-8082-exec-8] [cb91fb4f840bcc27b3492f81536bde91-33f93d3cbca34cdc] c.o.card.controller.CardController       : Card created with ID: CARD-1763205163554
+2025-11-15T14:12:46.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:12:46.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:01.111+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:01.111+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:16.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:16.109+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:31.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:31.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:46.111+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:13:46.111+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:01.109+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:01.109+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:16.109+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:16.110+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:31.104+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:31.104+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:46.108+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:14:46.109+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:01.104+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:01.105+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:16.103+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:16.104+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:42.986+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:42.987+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:57.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:15:57.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:12.985+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:12.986+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:27.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:27.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:42.986+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:42.987+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:57.981+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:16:57.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:12.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:12.983+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:27.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:27.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:42.984+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:42.984+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-9] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:57.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:17:57.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-3] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:12.987+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:12.987+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-7] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:27.981+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:27.981+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-6] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:42.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:42.983+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-5] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:57.981+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:18:57.981+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-2] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:12.982+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:12.983+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-8] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:27.994+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:27.994+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-10] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:42.980+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:42.981+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-1] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:57.983+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.
+2025-11-15T14:19:57.983+03:00 DEBUG 95053 --- [card-service] [http-nio-8082-exec-4] [                                                 ] t.p.B3PropagatorExtractorMultipleHeaders : Invalid TraceId in B3 header: null'. Returning INVALID span context.

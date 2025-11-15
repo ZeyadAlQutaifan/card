@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: card-service
+
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces
+
+logging:
+  level:
+    root: INFO
+    io.opentelemetry: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg traceId=%X{traceId} spanId=%X{spanId}%n"
+  file:
+    name: logs/card-service.log
